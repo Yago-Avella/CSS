@@ -3,48 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de CSS: Margin, Padding, Border, Width y Height</title>
+    <title>Ejemplo de Marcos en CSS</title>
     <style>
         /* Estilos generales */
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
             text-align: center;
+            padding-top: 50px;
         }
 
-        /* Estilos para el contenedor */
-        .container {
-            margin: 50px auto; /* Margen exterior: separa del borde superior y centrado */
-            padding: 20px; /* Espacio interior: separa el contenido del borde */
-            border: 5px solid #4CAF50; /* Borde verde */
-            background-color: #ffffff; /* Fondo blanco */
-            width: 300px; /* Ancho del contenedor */
-            height: 200px; /* Alto del contenedor */
+        /* Marco exterior gris */
+        .outer-frame {
+            background-color: #808080; /* Gris */
+            padding: 20px; /* Hueco blanco entre el gris y el azul */
+            display: inline-block; /* Ajusta el tamaño según su contenido */
         }
 
-        /* Texto de ejemplo */
-        .content {
-            background-color: #e0e0e0; /* Fondo gris claro */
-            padding: 10px; /* Relleno del contenido */
-            border: 2px dashed #000; /* Borde de líneas discontinuas */
+        /* Marco interior azul */
+        .inner-frame {
+            background-color: #0000FF; /* Azul */
+            padding: 20px; /* Hueco blanco entre el azul y el rectángulo naranja */
         }
+
+        /* Rectángulo naranja en el centro */
+        .center-rectangle {
+            background-color: #FFA500; /* Naranja */
+            width: 300px;
+            height: 150px;
+        }
+
     </style>
 </head>
 <body>
 
-    <h1>Ejemplo de CSS</h1>
+    <h1>Ejemplo de Marcos CSS</h1>
 
-    <div class="container">
-        <div class="content">
-            <p>Este es un ejemplo de un contenedor con margen, padding y borde.</p>
+    <!-- Marco exterior gris -->
+    <div class="outer-frame">
+        <!-- Marco interior azul -->
+        <div class="inner-frame">
+            <!-- Rectángulo naranja en el centro -->
+            <div class="center-rectangle"></div>
         </div>
     </div>
 
     <h2>Explicación:</h2>
-    <p><strong>Margin:</strong> 50px de margen alrededor del contenedor.</p>
-    <p><strong>Padding:</strong> 20px de espacio interior entre el contenido y el borde.</p>
-    <p><strong>Border:</strong> Borde de 5px sólido y verde alrededor del contenedor.</p>
-    <p><strong>Width & Height:</strong> Ancho de 300px y alto de 200px para el contenedor.</p>
+    <p><strong>Marco Exterior Gris:</strong> Tiene un padding de 20px para crear un hueco blanco alrededor del marco azul.</p>
+    <p><strong>Marco Interior Azul:</strong> Otro padding de 20px crea el hueco entre el marco azul y el rectángulo naranja.</p>
+    <p><strong>Rectángulo Naranja:</strong> Ancho de 300px y alto de 150px, ubicado en el centro.</p>
 
 </body>
 </html>
