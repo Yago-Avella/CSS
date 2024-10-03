@@ -1,0 +1,24 @@
+#titulo {
+    color: #2c3e50; 
+    font-size: 2.5em; 
+    text-align: center;
+}
+
+.texto {
+    color: #34495e; 
+    margin: 20px;
+    font-size: 1.2em; 
+    line-height: 1.6; 
+}
+
+#botonEnviar.boton {
+    background-color: #3498db;
+    color: white; 
+    border: 2px solid #2980b9; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 1.2em;
+}
+
+#botonEnviar.boton:hover {
+    background-color: #2980b9; 
